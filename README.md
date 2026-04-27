@@ -4,7 +4,9 @@ This is part of the Kali lab and oilrig lab to automate the deployment of the Oi
 To connect all the LANs of the lab you need a router. This router has 3 isolated LANs and a WAN connection using DHCP
 The WAN connection is only connected to the Internet in case there is a need to download files (i.e.: for deploying Caldera)
 
-This is for Virtualbox and Vmware Workstation
+This is for Virtualbox and Vmware Workstation.
+
+You need to create an isos folder and download the corresponding OPNSense iso file.
 
 The Packer file creates the base box using only network interface (LAN)
 At the end of the provisioning I copy a file called config-OPNSense.xml to /conf/config.xml
