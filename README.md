@@ -14,3 +14,15 @@ Vagrant and Vmware messes up with network interfaces order, so you need to set i
 
 For bringing everything you need to run:
 
+```
+packer build opnsense.pkr.hcl
+vagrant box add opnsense opnsense-vmware.box
+vagrant box add opnsense opnsense-virtualbox.box
+```
+
+Unfortunately Vagrant doesn´t allow to deploy Virtualbox and Vmware at the same time so you need to destroy before any VM and then bring up the VM:
+
+```
+vagrant destroy opnsense -f
+vagrant up opnsense --provider=virtualbox  # or --provider=vmware_desktop
+```
