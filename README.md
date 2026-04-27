@@ -1,4 +1,4 @@
-# opnsense-lab
+# OPNSense automatic installation for Oilrig lab
 This is part of the Kali lab and oilrig lab to automate the deployment of the Oilrig lab
 
 To connect all the LANs of the lab you need a router. This router has 3 isolated LANs and a WAN connection using DHCP
